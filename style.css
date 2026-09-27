@@ -1,0 +1,33 @@
+:root {
+    --darkBlue: #232B38;
+    --lightBlue1: #74D1C6;
+    --greyMauve: #566275;
+    --beige: #FEFDF9;
+    --yellow: #F9D067;
+    --pink: #FF8B8B;
+    --lightBlue2: #7BC4F4;
+    --lavender: #A593E0;
+}
+
+body {
+    background-color: var(--beige);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+header,
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+header {
+    border-bottom: 2.5px black solid;
+    margin: 0px;
+}
