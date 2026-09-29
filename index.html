@@ -11,38 +11,58 @@
 <body>
     <header>
         <!--Logo-->
-        <h3>JOYCE.DEV</h3>
+        <h3>JOYCE.<span style="color: #FF8B8B">
+                DEV
+            </span></h3>
         <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            <li><button>RESUME.pdf</button></li>
+            <li><a href="#hero">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a> </li>
+            <li><a href="./Joyce_Abboud_FlowCV_Resume_2026-09-19.pdf" target="_blank"><button
+                        class="resume">RESUME.pdf</button></a></li>
         </ul>
     </header>
     <main>
-        <section class="hero-section">
+        <section class="hero-section" id="hero">
             <div class="left-hero">
-                <p>WORLD'S MOST EXCITED BEGINNER</p>
-                <h1>Hi, I'm Joyce! I buils cool things with code.</h1>
-                <p class="introP">A self-taught developer passionate about clean semantics, CSS layouts,
-                    and simple math. Inspired by the fundemantals, exploring the web
-                    one function at a time.
+                <p class="beginner">🌍WORLD'S MOST EXCITED BEGINNER</p>
+                <h1>Hi, I'm <span style="color: #FF8B8B">
+                        Joyce
+                    </span>! I
+                    <br>build cool things
+                    <br> with code.
+                </h1>
+                <p class="introP">A self-taught developer passionate about clean semantics, CSS layouts,<br>
+                    and simple math. Inspired by the fundemantals,<br>
+                    exploring the web one function at a time.
                 </p>
                 <div class="hero-buttons ">
-                    <button class="explore">EXPLORE PROJECTS</button>
-                    <button class="hello">SAY HELLO!</button>
+                    <button class="explore"><a href="#projects">EXPLORE PROJECTS</a></button>
+                    <button class="hello"><a href="#contact">SAY HELLO!</a></button>
                 </div>
             </div>
             <div class="right-hero">
-                <image></image>
+                <image src="./WhatsApp Image 2026-09-28 at 9.55.12 AM (1).jpeg" class="me"></image>
             </div>
         </section>
+        <svg class="triangle-divider" viewBox="0 0 1000 7" xmlns="http://www.w3.org/2000/svg">
+
+            <defs>
+                <pattern id="trianglePattern" width="8" height="8" patternUnits="userSpaceOnUse">
+
+                    <polygon points="0,0 4,7 8,0" fill="#FF8B8B" />
+
+                </pattern>
+            </defs>
+
+            <rect width="100%" height="100%" fill="url(#trianglePattern)" />
+        </svg>
     </main>
     <section class="journey">
         <div class="left-journey">
-            <h2 class="journeyH2">My Journey So Far</h2>
+            <h2 class="journeyH2">My Journey So Far 🚀</h2>
             <p>I started coding with ambition to learn, so I started by
-                taking the CS50'X: Harvard's Introduction to computer
+                taking the CS50'X: Harvard's Introduction to computer science
                 and that's when I fell in love with web developement.
                 I'm now doing the ODIN project, I'm on my way to become
                 a full-stack developer.
@@ -53,7 +73,7 @@
             </p>
         </div>
         <div class="right-journey">
-            <h4>My Craft Box </h4>
+            <h4>My Craft Box 🧰</h4>
             <button class="skills html">HTML5</button>
             <button class="skills css">CSS3 & Layouts</button>
             <button class="skills js">JavaScript ES6</button>
@@ -62,56 +82,97 @@
             <button class="skills sql">SQL Databases</button>
             <button class="skills ui">UI Design</button>
             <div class="learning">
+                <svg width="100" height="60" class="circle" viewBox="0 0 1000 8" xmlns="http://www.w3.org/2000/svg">
+                    >
+                    <circle fill="#F9D067" r="150" cx="300" cy="50" />
+                </svg>
                 <p class="journeyP">Learning new skills daily. Currently exploring Advanced CSS and JavaScript.</p>
             </div>
         </div>
     </section>
-    <section class="creation">
-        <H2 class="myCreation">Things I've Created</H2>
+    <svg class="triangle-divider" viewBox="0 0 1000 7" xmlns="http://www.w3.org/2000/svg">
+
+        <defs>
+            <pattern id="trianglePatternTWO" width="15" height="8" patternUnits="userSpaceOnUse">
+
+                <polygon points="1,0 6,7 9,0" fill="#F9D067" />
+
+            </pattern>
+        </defs>
+
+        <rect width="100%" height="100%" fill="url(#trianglePatternTWO)" />
+    </svg>
+    </section>
+    <section class="creation" id="projects">
+        <H2 class="myCreation">Things I've Created ✨</H2>
         <p class="creationP">Each project represents hours of
             delibrate learning, contructed from robust design pattern
             and built completely by hand.
         </p>
         <div class="myProjects">
             <div class="project sketch">
-                <img>
-                <h3 class="projectHeading"></h3>
-                <p class="projectParagraph"></p>
-                <button class="tag"></button>
-                <button class="tag"></button>
+                <img src="./etch.PNG" alt="Etch-a-sketch project made by Joyce Abboud" width="50%" height="auto">
+                <h3 class="projectHeading">Etch-a-sketch</h3>
+                <p class="projectParagraph">An interactive grid-based board letting
+                    users draw pixel-art with mouse tracking. Features custom ui design,
+                    and more options.
+                </p>
+                <button class="tag js">JavaScript</button>
+                <button class="tag dom">DOM manipultion</button>
             </div>
             <div class="project calculator">
-                <img>
-                <h3 class="projectHeading"></h3>
-                <p class="projectParagraph"></p>
-                <button class="tag"></button>
-                <button class="tag"></button>
+                <img src="./calc.PNG" alt="Calculator project made by Joyce Abboud" width="50%" height="auto">
+                <h3 class="projectHeading">Calculator</h3>
+                <p class="projectParagraph">A highly-responsive mathematical parser with
+                    beautiful geometric interface mechanics. Simple code architecture.</p>
+                <button class="tag js2">JavaScript</button>
+                <button class="tag flex">Flexbox</button>
             </div>
             <div class="project rock">
-                <img>
-                <h3 class="projectHeading"></h3>
-                <p class="projectParagraph"></p>
-                <button class="tag"></button>
-                <button class="tag"></button>
+                <img src="./rps.PNG" alt="Rockc Paper Scissors project made by Joyce Abboud" width="50%" height="auto">
+                <h3 class="projectHeading">Rock Paper Scissors</h3>
+                <p class="projectParagraph">A classic Rock Paper Scissors game where you compete against the computer.
+                    Practiced game logic using Js and DOM.
+                </p>
+                <button class="tag grid">JavaScript</button>
+                <button class="tag game">Game Logic</button>
             </div>
             <div class="project wscreations">
-                <img>
-                <h3 class="projectHeading"></h3>
-                <p class="projectParagraph"></p>
-                <button class="tag"></button>
-                <button class="tag"></button>
+                <img src="./ws.PNG" alt="Real Bussiness website made by Joyce Abboud" width="50%" height="auto">
+                <h3 class="projectHeading">Bussiness Website</h3>
+                <p class="projectParagraph">A responsive handmade accessories website showcasing W’s Creations and its
+                    unique collection of handcrafted products.
+
+                </p>
+                <button class="tag flex">Flexbox</button>
+                <button class="tag shipped">Shipped</button>
             </div>
         </div>
     </section>
-    <section class="letsBuild darkBack">
-        <h2 class="ctaHeading">Let's Build Something New! </h2>
+    <svg class="triangle-divider" viewBox="0 0 1000 7" xmlns="http://www.w3.org/2000/svg">
+
+        <defs>
+            <pattern id="trianglePatternTHREE" width="15" height="8" patternUnits="userSpaceOnUse">
+
+                <polygon points="1,0 6,7 9,0" fill="#A593E0" />
+
+            </pattern>
+        </defs>
+
+        <rect width="100%" height="100%" fill="url(#trianglePatternTHREE)" />
+    </svg>
+    <section class="letsBuild darkBack" id="contact">
+        <h2 class="ctaHeading">Let's Build Something New! 🛠️</h2>
         <p class="ctaParagraph">Always looking to collaborate on new web platforms.
             Drop a line!
         </p>
         <div class="contact">
-            <button class="github link"></button>
-            <button class="link linkedIn"></button>
-            <button class="link email"></button>
+            <button class="github link"><img src="./github-alt-svgrepo-com.svg" alt="github icon" height="25px"
+                    width="auto"> </button>
+            <button class="link linkedIn"><img src="./linkedin-svgrepo-com.svg" alt="linkedIn icon" height="25px"
+                    width="auto"> </button>
+            <button class="link email"><img src="./mail-svgrepo-com.svg" alt="mail icon" height="25px"
+                    width="auto"></button>
         </div>
     </section>
 </body>

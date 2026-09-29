@@ -9,10 +9,22 @@
     --lavender: #A593E0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html,
 body {
+    margin: 0;
+    padding: 0;
+
     background-color: var(--beige);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+}
+
+header>h3 {
+    margin: 25px 0px 0px 20px;
 }
 
 header,
@@ -27,7 +39,282 @@ li {
     padding: 10px;
 }
 
+li>a {
+    color: black;
+    text-decoration: none;
+}
+
+.resume {
+    background-color: var(--lightBlue1);
+    border: 2px solid black;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
 header {
     border-bottom: 2.5px black solid;
     margin: 0px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 50px;
+    padding-left: 100px;
+    align-items: center;
+
+}
+
+.me {
+    width: 400px;
+    height: auto;
+    border-radius: 100px;
+
+    margin: 70px;
+    margin-left: 100px;
+}
+
+.right-hero {
+    width: 50%;
+    text-wrap: wrap;
+
+}
+
+h1 {
+    font-size: 55px;
+
+}
+
+.beginner {
+    background-color: var(--lavender);
+    color: var(--beige);
+    font-weight: bold;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 3px 6px;
+}
+
+.hero-buttons>button {
+    padding: 10px 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+
+    font-weight: bold;
+}
+
+.explore {
+    margin-right: 20px;
+    background-color: var(--yellow);
+}
+
+.explore>a,
+.hello>a {
+    color: black;
+    text-decoration: none;
+}
+
+.triangle-divider {
+    display: block;
+    width: 100%;
+    height: 12px;
+}
+
+.journey {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.left-journey {
+    text-wrap: wrap;
+    width: 50%;
+    margin: 20px 50px;
+}
+
+.right-journey {
+    width: 50%;
+}
+
+.journeyH2 {
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+.skills {
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 4px 8px;
+    margin: 5px;
+}
+
+.html {
+    background-color: var(--pink);
+}
+
+.css,
+.dom,
+.grid {
+    background-color: var(--lightBlue2);
+}
+
+.js {
+    background-color: var(--yellow);
+}
+
+.git,
+.flex {
+    background-color: var(--lightBlue1);
+}
+
+.svg,
+.js2 {
+    background-color: var(--lavender);
+}
+
+.sql,
+.pink,
+.game {
+    background-color: var(--pink);
+}
+
+.ui,
+.shipped {
+    background-color: var(--yellow);
+}
+
+h4 {
+    font-size: larger;
+}
+
+.learning {
+    border: 2px solid black;
+    border-radius: 5px;
+
+    width: 80%;
+    padding: 0px 20px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.creation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+.creationP {
+    width: 40%;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.myProjects {
+    display: flex;
+    flex-direction: row;
+}
+
+.project {
+    border: 2px solid black;
+    border-radius: 10px;
+
+    width: 50%;
+    margin: 10px;
+    padding-bottom: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 5px 5px black;
+
+}
+
+.project img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.tag {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+
+}
+
+.project .projectHeading,
+.project .projectParagraph,
+.project .tag {
+    margin: 10px 10px 10px 10px;
+}
+
+.darkBack {
+    background-color: var(--darkBlue);
+}
+
+.letsBuild {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ctaHeading {
+    color: var(--yellow);
+    font-weight: 1200;
+}
+
+.ctaParagraph {
+    color: var(--beige);
+}
+
+.link {
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+.github {
+    background-color: var(--yellow);
+
+}
+
+.linkedIn {
+    background-color: var(--lightBlue2);
+}
+
+.email {
+    background-color: var(--pink);
+}
+
+footer {
+    width: 100%;
+    background-color: #222c3a;
+    color: var(--beige);
+
+    padding: 15px 20px;
+    text-align: left;
+}
+
+
+
+/**HOVERRING*/
+.project:hover,
+.explore:hover,
+.hello:hover {
+    background-color: var(--pink);
+    box-shadow: 10px 10px black;
+}
+
+.skills:hover {
+    box-shadow: 3px 3px black;
 }
