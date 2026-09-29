@@ -67,19 +67,46 @@ header {
 
 }
 
-.me {
+.right-hero {
+    position: relative;
     width: 400px;
-    height: auto;
-    border-radius: 100px;
+    margin: 90px 110px 70px 0px;
 
-    margin: 70px;
-    margin-left: 100px;
+    /* Allows your head to leave the box */
+    overflow: visible;
 }
 
-.right-hero {
-    width: 50%;
-    text-wrap: wrap;
+.photo-frame {
+    width: 100%;
+    border-radius: 120px;
+    overflow: hidden;
+}
 
+.me {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.body-cutout {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    z-index: 2;
+
+    transform-origin: bottom center;
+    transition: transform 0.3s ease-out;
+}
+
+.right-hero:hover .body-cutout {
+    transform: scale(1.28);
 }
 
 h1 {
@@ -209,6 +236,7 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 
     padding: 40px 20px;
 }
