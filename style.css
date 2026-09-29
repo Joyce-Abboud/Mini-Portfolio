@@ -346,3 +346,281 @@ footer {
 .skills:hover {
     box-shadow: 3px 3px black;
 }
+
+
+/* =========================
+   TABLET
+   ========================= */
+@media (max-width: 1024px) {
+
+    /* HEADER */
+    header>h3 {
+        margin-left: 20px;
+    }
+
+    header ul {
+        padding-right: 20px;
+    }
+
+
+    /* HERO */
+    .hero-section {
+        padding: 50px 40px;
+        gap: 40px;
+    }
+
+    .left-hero {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .right-hero {
+        width: 320px;
+        margin: 70px 30px 60px 0;
+        flex-shrink: 0;
+    }
+
+    /* Keep head pop-out effect */
+    .right-hero:hover .body-cutout {
+        transform: scale(1.2);
+    }
+
+
+    /* JOURNEY */
+    .journey {
+        padding: 40px 30px;
+        gap: 30px;
+    }
+
+    .left-journey {
+        width: 50%;
+        margin: 20px;
+    }
+
+    .right-journey {
+        width: 50%;
+    }
+
+    .learning {
+        width: 100%;
+    }
+
+
+    /* PROJECTS */
+    .creationP {
+        width: 65%;
+    }
+
+    .myProjects {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project {
+        width: calc(50% - 25px);
+    }
+
+
+    /* CTA */
+    .letsBuild {
+        padding: 30px 20px;
+        text-align: center;
+    }
+}
+
+/* =========================
+   PHONE
+   ========================= */
+@media (max-width: 600px) {
+
+    /* Prevent horizontal scrolling */
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* =====================
+       HEADER
+       ===================== */
+
+    header {
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    header>h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    header ul {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    li {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .resume {
+        padding: 3px 5px;
+    }
+
+
+    /* =====================
+       HERO
+       ===================== */
+
+    .hero-section {
+        flex-direction: column;
+
+        padding: 50px 25px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .left-hero {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
+
+    .beginner {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .explore {
+        margin-right: 0;
+    }
+
+
+    /* HERO IMAGE */
+
+    .right-hero {
+        width: min(300px, 85vw);
+        margin: 50px auto 30px;
+    }
+
+    .photo-frame {
+        border-radius: 90px;
+    }
+
+    /* Disable hover enlargement on phones */
+    .right-hero:hover .body-cutout {
+        transform: none;
+    }
+
+
+    /* =====================
+       JOURNEY
+       ===================== */
+
+    .journey {
+        flex-direction: column;
+        padding: 40px 25px;
+    }
+
+    .left-journey,
+    .right-journey {
+        width: 100%;
+        margin: 0;
+    }
+
+    .journeyH2 {
+        font-size: 27px;
+    }
+
+    .right-journey {
+        margin-top: 30px;
+    }
+
+    .learning {
+        width: 100%;
+        padding: 10px 15px;
+        flex-direction: column;
+    }
+
+    .skills {
+        display: inline-block;
+    }
+
+
+    /* =====================
+       PROJECTS
+       ===================== */
+
+    .creation {
+        padding: 40px 20px;
+    }
+
+    .creationP {
+        width: 100%;
+    }
+
+    .myProjects {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .project {
+        width: 100%;
+        max-width: 400px;
+        margin: 15px 0;
+    }
+
+    .project img {
+        height: 200px;
+    }
+
+
+    /* =====================
+       CTA
+       ===================== */
+
+    .letsBuild {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .ctaHeading {
+        font-size: 27px;
+    }
+
+    .ctaParagraph {
+        text-align: center;
+    }
+
+    .link {
+        display: inline-block;
+        margin: 5px;
+    }
+
+
+    /* =====================
+       FOOTER
+       ===================== */
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        font-size: 13px;
+    }
+}
