@@ -12,6 +12,10 @@
 * {
     box-sizing: border-box;
 }
+html{
+    scrollbar-color: var(--pink) var(--yellow);
+    scrollbar-width: auto;
+}
 
 html,
 body {
