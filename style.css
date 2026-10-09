@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 html{
-    scrollbar-color: var(--pink) var(--yellow);
+    scrollbar-color: var(--yellow) var(--darkBlue);
     scrollbar-width: auto;
 }
 
